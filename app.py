@@ -17,71 +17,128 @@ st.set_page_config(
 st.markdown("""
     <style>
     .main {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
+        padding: 1rem;
     }
+    
     .stButton>button {
         background-color: #0066cc;
         color: white;
-        font-size: 16px;
+        font-size: clamp(14px, 3vw, 16px);
         font-weight: bold;
         border-radius: 8px;
-        padding: 12px 28px;
+        padding: clamp(10px, 2vh, 12px) clamp(20px, 4vw, 28px);
         border: none;
         width: 100%;
+        transition: all 0.3s ease;
     }
     .stButton>button:hover {
         background-color: #0052a3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,102,204,0.3);
     }
+    
     h1 {
         color: #1a1a1a;
         text-align: center;
         font-weight: 700;
-        padding: 20px 0;
+        padding: clamp(15px, 3vh, 20px) 0;
+        font-size: clamp(24px, 5vw, 36px);
     }
     h2 {
         color: #333333;
         font-weight: 600;
         border-bottom: 3px solid #0066cc;
         padding-bottom: 10px;
+        font-size: clamp(20px, 4vw, 28px);
+        margin-top: 1.5rem;
     }
     h3 {
         color: #555555;
         font-weight: 500;
+        font-size: clamp(16px, 3.5vw, 22px);
+    }
+    h4 {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+    
+    .info-box, .success-box, .warning-box {
+        padding: clamp(12px, 2.5vw, 15px);
+        margin: clamp(10px, 2vh, 15px) 0;
+        border-radius: 8px;
+        font-size: clamp(13px, 2.5vw, 15px);
+        line-height: 1.6;
     }
     .info-box {
         background-color: #e7f3ff;
         border-left: 5px solid #0066cc;
-        padding: 15px;
-        margin: 15px 0;
-        border-radius: 5px;
     }
     .success-box {
         background-color: #d4edda;
         border-left: 5px solid #28a745;
-        padding: 15px;
-        margin: 15px 0;
-        border-radius: 5px;
     }
     .warning-box {
         background-color: #fff3cd;
         border-left: 5px solid #ffc107;
-        padding: 15px;
-        margin: 15px 0;
-        border-radius: 5px;
     }
+    
     .metric-card {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: #fafafa;
+        padding: clamp(15px, 3vw, 20px);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         text-align: center;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    .metric-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    
     .section-card {
-        background-color: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin: 20px 0;
+        background-color: #fafafa;
+        padding: clamp(15px, 3.5vw, 25px);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        margin: clamp(15px, 2.5vh, 20px) 0;
+    }
+    .section-card ul, .section-card p {
+        font-size: clamp(13px, 2.5vw, 15px);
+        line-height: 1.7;
+    }
+    
+    @media (max-width: 768px) {
+        .row-widget.stHorizontalBlock {
+            flex-direction: column;
+        }
+        .metric-card, .section-card {
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .main {
+            padding: 1.5rem;
+        }
+    }
+    
+    .stImage {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .element-container {
+        margin-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+        section[data-testid="stSidebar"] {
+            width: 100% !important;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -1177,4 +1234,5 @@ elif page == "Model Implementation":
             </div>
             """, unsafe_allow_html=True)
         
+
         st.markdown("---")
