@@ -248,7 +248,7 @@ if page == "Introduction":
     """, unsafe_allow_html=True)
     
     # CNN Definition
-    st.markdown("## 🧠 Convolutional Neural Networks (CNN)")
+    st.markdown("## Convolutional Neural Networks (CNN)")
     st.markdown("""
     <div class='section-card'>
     <h3>What is CNN?</h3>
@@ -269,7 +269,7 @@ if page == "Introduction":
     """, unsafe_allow_html=True)
     
     # Types of CNN
-    st.markdown("## 📊 Types of CNN Architectures")
+    st.markdown("## Types of CNN Architectures")
     
     col1, col2 = st.columns(2)
     
@@ -302,7 +302,7 @@ if page == "Introduction":
         """, unsafe_allow_html=True)
     
     # CNN Architecture
-    st.markdown("## 🏗️ CNN Architecture Components")
+    st.markdown("## CNN Architecture Components")
     
     st.markdown("""
     <div class='section-card'>
@@ -360,7 +360,7 @@ if page == "Introduction":
              caption="Typical CNN Architecture: Input → Conv → Pool → Conv → Pool → Flatten → FC → Output")
     
     # U-Net Definition
-    st.markdown("## 🔄 U-Net Architecture (CNN-based)")
+    st.markdown("## U-Net Architecture (CNN-based)")
     
     st.markdown("""
     <div class='section-card'>
@@ -387,7 +387,7 @@ if page == "Introduction":
              caption="U-Net Architecture: Encoder (left) → Bottleneck (bottom) → Decoder (right) with Skip Connections")
     
     # Key Terms
-    st.markdown("## 📚 Key Terms in Shadow Detection")
+    st.markdown("## Key Terms in Shadow Detection")
     
     col1, col2, col3 = st.columns(3)
     
@@ -437,14 +437,14 @@ if page == "Introduction":
         """, unsafe_allow_html=True)
     
     # Advantages & Disadvantages
-    st.markdown("## ⚖️ U-Net for Shadow Detection: Pros & Cons")
+    st.markdown("## U-Net for Shadow Detection: Pros & Cons")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
         <div class='section-card' style='border-left: 5px solid #28a745;'>
-        <h3 style='color: #28a745;'>✅ Advantages</h3>
+        <h3 style='color: #28a745;'>Advantages</h3>
         <ul style='font-size: 14px; line-height: 1.8;'>
             <li><strong>High Accuracy:</strong> Precise pixel-level segmentation of shadow regions</li>
             <li><strong>Skip Connections:</strong> Preserves fine spatial details and boundaries</li>
@@ -460,7 +460,7 @@ if page == "Introduction":
     with col2:
         st.markdown("""
         <div class='section-card' style='border-left: 5px solid #dc3545;'>
-        <h3 style='color: #dc3545;'>❌ Disadvantages</h3>
+        <h3 style='color: #dc3545;'>Disadvantages</h3>
         <ul style='font-size: 14px; line-height: 1.8;'>
             <li><strong>Training Data:</strong> Requires paired shadow/shadow-free images</li>
             <li><strong>Computational Cost:</strong> Needs GPU for training and inference</li>
@@ -474,7 +474,7 @@ if page == "Introduction":
         """, unsafe_allow_html=True)
     
     # Applications
-    st.markdown("## 🎯 Applications of Shadow Detection & Removal")
+    st.markdown("## Applications of Shadow Detection & Removal")
     
     st.markdown("""
     <div class='section-card'>
@@ -487,7 +487,7 @@ if page == "Introduction":
     with col1:
         st.markdown("""
         <div class='metric-card'>
-            <h4>📄 Document Processing</h4>
+            <h4>Document Processing</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Document scanning & digitization</li>
                 <li>Archive preservation</li>
@@ -500,7 +500,7 @@ if page == "Introduction":
     with col2:
         st.markdown("""
         <div class='metric-card'>
-            <h4>🔍 OCR Enhancement</h4>
+            <h4>OCR Enhancement</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Improved text recognition</li>
                 <li>Better character detection</li>
@@ -513,7 +513,7 @@ if page == "Introduction":
     with col3:
         st.markdown("""
         <div class='metric-card'>
-            <h4>📸 Photography</h4>
+            <h4>Photography</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Photo enhancement</li>
                 <li>Portrait editing</li>
@@ -528,7 +528,7 @@ if page == "Introduction":
     with col1:
         st.markdown("""
         <div class='metric-card'>
-            <h4>🏛️ Cultural Heritage</h4>
+            <h4>Cultural Heritage</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Historical document restoration</li>
                 <li>Museum artifact digitization</li>
@@ -541,7 +541,7 @@ if page == "Introduction":
     with col2:
         st.markdown("""
         <div class='metric-card'>
-            <h4>💼 Business Applications</h4>
+            <h4>Business Applications</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Invoice processing</li>
                 <li>Contract digitization</li>
@@ -554,7 +554,7 @@ if page == "Introduction":
     with col3:
         st.markdown("""
         <div class='metric-card'>
-            <h4>🎓 Education</h4>
+            <h4>Education</h4>
             <ul style='font-size: 13px; text-align: left; line-height: 1.6;'>
                 <li>Textbook digitization</li>
                 <li>Note scanning</li>
@@ -569,7 +569,7 @@ elif page == "Dataset Information":
     st.markdown("""
         <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                     padding: 40px; border-radius: 10px; margin-bottom: 30px;'>
-            <h1 style='color: white; margin: 0;'>📊 Dataset Information</h1>
+            <h1 style='color: white; margin: 0;'>Dataset Information</h1>
             <p style='color: white; text-align: center; font-size: 18px; margin-top: 10px;'>
                 ISTD - Image Shadow Triplets Dataset
             </p>
@@ -577,7 +577,7 @@ elif page == "Dataset Information":
     """, unsafe_allow_html=True)
     
     # Dataset Overview
-    st.markdown("## 📁 ISTD Dataset Overview")
+    st.markdown("## ISTD Dataset Overview")
     st.markdown("""
     <div class='section-card'>
     <p style='font-size: 16px; line-height: 1.8;'>
@@ -589,7 +589,7 @@ elif page == "Dataset Information":
     """, unsafe_allow_html=True)
     
     # Dataset Statistics
-    st.markdown("## 📈 Dataset Statistics")
+    st.markdown("## Dataset Statistics")
     
     col1, col2, col3, col4 = st.columns(4)
     
@@ -630,7 +630,7 @@ elif page == "Dataset Information":
         """, unsafe_allow_html=True)
     
     # Dataset Composition
-    st.markdown("## 🔄 Dataset Flow & Composition")
+    st.markdown("## Dataset Flow & Composition")
     
     st.markdown("""
     <div class='section-card'>
@@ -671,7 +671,7 @@ elif page == "Dataset Information":
         """, unsafe_allow_html=True)
     
     # Dataset Flowchart
-    st.markdown("## 📊 Dataset Processing Flowchart")
+    st.markdown("## Dataset Processing Flowchart")
     
     st.markdown("""
     <div class='section-card'>
@@ -751,7 +751,7 @@ elif page == "Dataset Information":
         """, unsafe_allow_html=True)
     
     # Dataset Details
-    st.markdown("## 📋 Dataset Details")
+    st.markdown("## Dataset Details")
     
     col1, col2 = st.columns(2)
     
@@ -786,7 +786,7 @@ elif page == "Dataset Information":
         """, unsafe_allow_html=True)
     
     # View Top 3 Images Section
-    st.markdown("## 🖼️ View 3 Dataset Samples")
+    st.markdown("## View 3 Dataset Samples")
     
     st.markdown("""
     <div class='info-box'>
@@ -837,7 +837,7 @@ elif page == "Dataset Information":
     
     
     # Dataset Download Section
-    st.markdown("## 📦 Dataset Download")
+    st.markdown("## Dataset Download")
     
     st.markdown("""
     <div class='section-card'>
@@ -882,7 +882,7 @@ elif page == "Model Implementation":
     st.markdown("""
         <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                     padding: 40px; border-radius: 10px; margin-bottom: 30px;'>
-            <h1 style='color: white; margin: 0;'>🚀 Model Implementation</h1>
+            <h1 style='color: white; margin: 0;'>Model Implementation</h1>
             <p style='color: white; text-align: center; font-size: 18px; margin-top: 10px;'>
                 ShadowClear - Upload and Process Your Documents
             </p>
@@ -895,7 +895,7 @@ elif page == "Model Implementation":
     if model is None:
         st.markdown("""
         <div class='warning-box'>
-        <strong>⚠️ Model Not Found!</strong><br>
+        <strong>Model Not Found!</strong><br>
         Please ensure that 'shadow_removal_final.h5' is in the same directory as this application.
         </div>
         """, unsafe_allow_html=True)
@@ -903,12 +903,12 @@ elif page == "Model Implementation":
     
     st.markdown("""
     <div class='success-box'>
-    <strong>✅ Model Status:</strong> Successfully Loaded | U-Net Architecture Ready for Processing
+    <strong>Model Status:</strong> Successfully Loaded | U-Net Architecture Ready for Processing
     </div>
     """, unsafe_allow_html=True)
     
     # Model Information
-    st.markdown("## 🤖 Model Information")
+    st.markdown("## Model Information")
     
     col1, col2, col3, col4 = st.columns(4)
     
@@ -951,7 +951,7 @@ elif page == "Model Implementation":
     st.markdown("---")
     
     # Upload Section
-    st.markdown("## 📤 Upload Shadow Document")
+    st.markdown("## Upload Shadow Document")
     
     uploaded_file = st.file_uploader(
         "Choose an image file with shadows",
@@ -960,7 +960,7 @@ elif page == "Model Implementation":
     )
     
     if uploaded_file is not None:
-        st.markdown("## 🔄 Processing Pipeline")
+        st.markdown("## Processing Pipeline")
         
         col1, col2 = st.columns(2)
         
@@ -1016,10 +1016,10 @@ elif page == "Model Implementation":
                 # Calculate metrics
                 shadow_percentage = (np.sum(pred_mask > 0.5) / pred_mask.size) * 100
                 
-                st.success("✅ Processing Complete!")
+                st.success("Processing Complete!")
                 
                 st.markdown("---")
-                st.markdown("## 📊 Processing Results & Metrics")
+                st.markdown("## Processing Results & Metrics")
                 
                 metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
                 
@@ -1061,7 +1061,7 @@ elif page == "Model Implementation":
                 
                 st.markdown("---")
                 
-                st.markdown("## 🖼️ Visualization Results")
+                st.markdown("## Visualization Results")
                 
                 # Show results in tabs for better organization
                 tab1, tab2, tab3 = st.tabs(["🔴 Shadow Detection", "⚫ Shadow Mask", "✨ Final Output"])
@@ -1101,7 +1101,7 @@ elif page == "Model Implementation":
                 st.markdown("---")
                 
                 # Side-by-side comparison
-                st.markdown("## 🔄 Before & After Comparison")
+                st.markdown("## Before & After Comparison")
                 
                 comp_col1, comp_col2 = st.columns(2)
                 
@@ -1116,7 +1116,7 @@ elif page == "Model Implementation":
                 st.markdown("---")
                 
                 # Download Section
-                st.markdown("## 💾 Download Results")
+                st.markdown("## Download Results")
                 
                 st.markdown("""
                 <div class='info-box'>
@@ -1155,7 +1155,7 @@ elif page == "Model Implementation":
     
     else:
         # No image uploaded - Show instructions
-        st.markdown("## 📋 How to Use")
+        st.markdown("##How to Use")
         
         st.markdown("""
         <div class='info-box'>
@@ -1215,9 +1215,9 @@ elif page == "Model Implementation":
             <div class='section-card'>
             <h3>Input Formats</h3>
             <ul style='font-size: 15px; line-height: 1.8;'>
-                <li>✅ JPG / JPEG</li>
-                <li>✅ PNG</li>
-                <li>✅ BMP</li>
+                <li># JPG / JPEG</li>
+                <li># PNG</li>
+                <li># BMP</li>
             </ul>
             </div>
             """, unsafe_allow_html=True)
@@ -1227,12 +1227,13 @@ elif page == "Model Implementation":
             <div class='section-card'>
             <h3>Output Formats</h3>
             <ul style='font-size: 15px; line-height: 1.8;'>
-                <li>📄 PNG (Lossless)</li>
-                <li>🎯 Original Resolution</li>
-                <li>💯 High Quality</li>
+                <li># PNG (Lossless)</li>
+                <li># Original Resolution</li>
+                <li># High Quality</li>
             </ul>
             </div>
             """, unsafe_allow_html=True)
         
 
         st.markdown("---")
+
